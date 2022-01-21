@@ -1,0 +1,1 @@
+# pro-recruiter-connect-static

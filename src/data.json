@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Mukilan S",
+        "image":{
+            "path": "",
+            "file": ""
+        },
+        "designation": "Fresher",
+        "location": {
+            "area": "Navalur",
+            "city": "Chennai"
+        },
+        "skills":{
+            "primary":["", "", "", "", ""],
+            "secondary":["", "", "", "", ""]
+        },
+        "education":[
+            {
+                "degree": "BE",
+                "stream": "Mech",
+                "yop": 2008,
+                "score":{
+                    "value": 7.4,
+                    "type": "CGPA"
+                }               
+            },
+            {
+                "degree": "HSC",
+                "stream": "State Board",
+                "yop": 2008,
+                "score":{
+                    "value": 7.4,
+                    "type": "CGPA"
+                }               
+            },
+            {
+                "degree": "BE",
+                "stream": "Mech",
+                "yop": 2008,
+                "score":{
+                    "value": 7.4,
+                    "type": "CGPA"
+                }               
+            }
+        ],
+        "employment":[
+            {
+                "company": "BE",
+                "role": "Mech",
+                "relieving": {
+                    "year": "2008",
+                    "month": "2008"
+                },
+                "joining": {
+                    "year": "2008",
+                    "month": "2008"
+                },
+                "score":{
+                    "value": 7.4,
+                    "type": "CGPA"
+                }               
+            }
+        ],
+        "expectations":{
+            "salary": 500000,
+            "notice": 0
+        }
+    }
+]

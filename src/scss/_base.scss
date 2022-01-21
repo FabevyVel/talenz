@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  font-family: 'IBM Plex Sans', sans-serif; 
+}
+
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+p{
+	font-size: 18px;
+}
+
+.padd-30{
+	padding: 0 30px !important;
+}
+
+.v-certer{
+	height: 100vh;
+	align-items: center;
+	justify-items: center;
+}
+
+
+/* ------------------------- Title ----------------------------*/
+
+.page-title{
+	h3{
+		font-size: 40px;
+		font-weight: 700;
+		color: #5c2e91;
+	}
+}
+
+
+
+/* --------------------------- Header ----------------------------- */
+
+.header-section{
+	padding: 10px 0;
+	background-color: #ffffff;
+	.navbar-brand{
+		font-size: 30px;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #000;
+		span{
+			color: #f36a2c;
+		}
+	}
+	.login-btn{
+		padding: 10px 25px;
+		background-color: #f36a2c;
+		color: #ffffff;
+		font-size: 20px;
+		border-radius: 5px;
+		display: inline-block;
+	}
+}
+
+
+/* ---------------------- Banner-Section --------------------- */
+
+.banner-section{
+	// background-color: #51565a;
+	background-color: #5c2e91;
+	padding: 80px 0;
+	.banner-cont{
+		h1{
+			font-size: 40px;
+			font-weight: 400;
+			color: #ffffff;
+			margin-bottom: 15px;
+		}
+		p{
+			color: #ffffff;
+			font-size: 25px;
+			margin-bottom: 20px;
+		}
+		.detail-btn{
+			padding: 10px 25px;
+			background-color: #ffffff;
+			color: #1a94ff;
+			font-size: 20px;
+			border-radius: 5px;
+			display: inline-block;
+		}
+	}
+}
+
+
+/* ------------------------------ Job-Section ------------------------ */
+
+.job-section{
+	background-color: #f6f6f6;
+	// background-color: #5c2e91;
+	padding: 70px 0;
+
+	.job-list{
+		padding-top: 70px;
+		.job-card{
+			background-color: #ffffff;
+			box-shadow: 0 2px 5px #ddd;
+			margin-bottom: 40px;
+			// border: 2px solid #ddd;
+			.card-top{
+				border-bottom: 1px solid #f4f4f4;
+				padding: 20px;
+				position: relative;
+				.user-dt-part{
+					.user-img{
+						position: absolute;
+						top: 0;
+						left: 20px;
+						font-size: 40px;
+						color: #de619b;
+					}
+					.user-name{
+						padding-left: 70px;
+						padding-top: 5px;
+						h3{
+							font-size: 20px;
+							// color: #de619b;
+							color: #5c2e91;
+							font-weight: 500;
+						}
+						p{
+							font-size: 15px;
+							margin-bottom: 0;
+							color: #847c85;
+						}
+					}
+				}
+				.resume-part{
+					transition: all 0.5s ease;
+					a{
+						color: #e6e6e6;
+						font-size: 22px;
+						margin-left: 10px;
+					}
+				}
+			}
+			.card-body-cont{
+				padding:15px;
+				.card-dt-part{
+					.dt-item{
+						margin-bottom: 20px;
+						h4{
+							font-size: 13px;
+							font-weight: 500;
+							margin-bottom: 5px;
+							// color: #de619b;
+							color: #1877f2;
+						}
+						span{
+							font-size: 16px;
+							display: block;
+							margin-bottom: 5px;
+							color: #000;
+						}
+					}
+				}
+			}
+
+			&:hover .resume-part{
+				opacity: 1;
+				a{
+					color: #FFA500;
+				}
+			}
+		}
+	}
+}
+
+
+
+/* -------------------------- Login-Section ---------------------------- */
+
+.login-section{
+	background-color: #f0f2f5;
+	height: 100vh;
+
+
+	.login-lt-cont{
+		h1{
+			color: #1877f2;
+			font-size: 60px;
+			font-weight: 700;
+		}
+
+		p{
+			font-size: 30px;
+			font-weight: 500;
+		}
+	}
+
+	.login-form{
+		background-color: #fff;
+		border: none;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+		box-sizing: border-box;
+		padding: 40px 25px;
+		display: flex;
+		align-items: center;
+
+		.form-control{
+			height: 50px;
+			margin-bottom: 30px;
+			&:focus{
+				box-shadow: none;
+			}
+		}
+
+		#submit-btn{
+			background-color: #1877f2;
+			border: none;
+			border-radius: 6px;
+			font-size: 20px;
+			width: 100%;
+			display: block;
+			padding: 12px 30px;
+			color: #ffffff;
+			font-weight: 500;
+
+			&:focus{
+				outline: none;
+			}
+		}
+
+		.forgot-mail{
+			text-align: center;
+			border-bottom: 1px solid #dadde1;
+			padding: 30px 0;
+			a{
+				color: #1877f2;
+    			font-size: 18px;
+			}
+		}
+
+		.create-btn{
+			padding: 30px 0 0;
+			a{
+				background-color: #42b72a;
+				border: none;
+				border-radius: 6px;
+				font-size: 20px;
+				width: 100%;
+				display: block;
+				padding: 12px 30px;
+				color: #ffffff;
+				font-weight: 500;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+.login-modal{
+	.modal-header{
+		display: block;
+	}
+
+	.close{
+		position: absolute;
+		top: 20px;
+		opacity: 1;
+		right: 20px;
+		color: #000;
+		font-size: 25px;
+
+		&:focus{
+			outline: none;
+			box-shadow: none;
+			border: 0;
+		}
+	}
+
+	.modal-body{
+		.form-control{
+			height: 50px;
+			width: 100%;
+			margin-bottom: 30px;
+			&:focus{
+				box-shadow: none;
+			}
+		}
+	}
+
+	#submit-btn{
+		background-color: #1877f2;
+		border: none;
+		border-radius: 6px;
+		font-size: 20px;
+		width: 100%;
+		display: block;
+		padding: 12px 30px;
+		color: #ffffff;
+		font-weight: 500;
+		&:focus{
+			outline: none;
+		}
+	}
+}
+
+
+.my-modal-box{
+	max-width: 700px;
+}
+
+.modal-close-btn{
+	opacity: 1;
+	&:focus{
+		outline: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- Responsive-Styles ---------------------------- */ 
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+	.padd-30{
+		padding: 0 10px !important;
+	}
+
+	.page-title h3{
+		font-size: 30px;
+	}
+
+	.navbar{
+		padding: 0;
+	}
+
+	.header-section .login-btn{
+		padding:8px 10px;
+		font-size: 15px;
+	}
+
+	.banner-section .banner-cont h1{
+		font-size: 28px;
+	}
+
+	.banner-section .banner-cont p{
+		font-size: 16px;
+	}
+
+	.banner-section .banner-cont .detail-btn{
+		padding: 8px 10px;
+		font-size: 15px;
+	}
+
+	.my-modal-box{
+		max-width: 700px;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+	.my-modal-box{
+		max-width: 700px;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
