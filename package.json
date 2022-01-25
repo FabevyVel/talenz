@@ -6,12 +6,13 @@
   "dependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "jquery": "^3.5.0"
   },
   "devDependencies": {
     "gulp-include": "^2.4.1",
-    "merge-stream": "^2.0.0"
+    "merge-stream": "^2.0.0",
+    "sass": "^1.49.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

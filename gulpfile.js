@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const include = require('gulp-include');
 const merge = require('merge-stream');
 const browserSync = require('browser-sync').create();
