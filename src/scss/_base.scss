@@ -41,13 +41,19 @@ p{
 .header-section{
 	padding: 10px 0;
 	background-color: #ffffff;
+	.navbar{
+		padding: 0;
+		display: block;
+	}
 	.navbar-brand{
 		font-size: 30px;
 		font-weight: 800;
 		text-transform: uppercase;
 		color: #000;
-		span{
-			color: #f36a2c;
+		padding: 0;
+		img{
+			max-width: 104px;
+			display: block;
 		}
 	}
 	.login-btn{
@@ -68,6 +74,7 @@ p{
 	background-color: #5c2e91;
 	padding: 80px 0;
 	.banner-cont{
+		text-align: center;
 		h1{
 			font-size: 40px;
 			font-weight: 400;
@@ -81,8 +88,8 @@ p{
 		}
 		.detail-btn{
 			padding: 10px 25px;
-			background-color: #ffffff;
-			color: #1a94ff;
+			background-color: #f36a2c;
+			color: #fff;
 			font-size: 20px;
 			border-radius: 5px;
 			display: inline-block;
@@ -110,15 +117,22 @@ p{
 				padding: 20px;
 				position: relative;
 				.user-dt-part{
+					overflow: hidden;
+					min-height: 75px;
 					.user-img{
 						position: absolute;
 						top: 0;
 						left: 20px;
 						font-size: 40px;
 						color: #de619b;
+						width: 70px;
+						img{
+							max-width: 100%;
+							border-radius: 50%;
+						}
 					}
 					.user-name{
-						padding-left: 70px;
+						padding-left: 90px;
 						padding-top: 5px;
 						h3{
 							font-size: 20px;
@@ -131,14 +145,24 @@ p{
 							margin-bottom: 0;
 							color: #847c85;
 						}
+						img{
+							max-width: 100%;
+						}
 					}
 				}
 				.resume-part{
 					transition: all 0.5s ease;
 					a{
-						color: #e6e6e6;
-						font-size: 22px;
+						color: rgb(230, 230, 230);
+						font-size: 18px;
 						margin-left: 10px;
+						display: inline-block;
+						border: solid 1px;
+						width: 40px;
+						height: 40px;
+						text-align: center;
+						border-radius: 50%;
+						line-height: 40px;
 					}
 				}
 			}
@@ -348,6 +372,7 @@ p{
 	.header-section .login-btn{
 		padding:8px 10px;
 		font-size: 15px;
+		margin-top: 8px;
 	}
 
 	.banner-section .banner-cont h1{
