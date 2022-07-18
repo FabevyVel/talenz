@@ -179,6 +179,9 @@ p {
               margin-bottom: 5px;
               color: #000;
             }
+            &:last-child{
+              display: none;
+            }
           }
         }
       }
