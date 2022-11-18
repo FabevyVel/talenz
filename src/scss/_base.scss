@@ -109,28 +109,28 @@ p {
       // border: 2px solid #ddd;
       .card-top {
         border-bottom: 1px solid #f4f4f4;
-        padding: 20px;
+        padding: 20px 20px 5px;
         position: relative;
         .user-dt-part {
           overflow: hidden;
           min-height: 75px;
           .user-img {
-            position: absolute;
             top: 0;
             left: 20px;
             font-size: 40px;
             color: #de619b;
-            width: 70px;
+            width: 100px;
+            margin: auto;
             img {
               max-width: 100%;
               border-radius: 50%;
             }
           }
           .user-name {
-            padding-left: 90px;
-            padding-top: 5px;
+            padding: 0;
+            text-align: center;
             h3 {
-              font-size: 20px;
+              font-size: 28px;
               // color: #de619b;
               color: #5c2e91;
               font-weight: 500;
@@ -148,16 +148,24 @@ p {
         .resume-part {
           transition: all 0.5s ease;
           a {
-            color: rgb(230, 230, 230);
-            font-size: 18px;
-            margin-left: 10px;
+            color: #847c85;
+            font-size: 16px;
+            margin-right: 10px;
             display: inline-block;
-            border: solid 1px;
-            width: 40px;
-            height: 40px;
+            padding: 7px 3px;
             text-align: center;
-            border-radius: 50%;
-            line-height: 40px;
+            transition: all 0.2s;
+
+            [class*=" icofont-"],
+            [class^=icofont-] {
+              border: solid 1px;
+              border-radius: 50%;
+              width: 28px;
+              display: inline-block;
+              height: 28px;
+              line-height: 28px;
+              margin-right: 4px;
+            }
           }
         }
       }
@@ -191,6 +199,11 @@ p {
         a {
           color: #ffa500;
         }
+      }
+    }
+    .placed-holder{
+      .job-card .card-top .resume-part{
+        display: none;
       }
     }
   }
@@ -365,7 +378,6 @@ p {
     color: #fff;
   }
 }
-
 /* ----------------------- Responsive-Styles ---------------------------- */
 
 // Extra small devices (portrait phones, less than 576px)
