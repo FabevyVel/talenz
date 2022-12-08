@@ -425,20 +425,20 @@ p {
   margin-bottom: 5px;
   color: #1877f2;
 }
-p{
-  border: 1px solid gray;
-  margin: 5px 10px;
-  position: relative;
-}
+
 a{
+  border: 1px solid #ccc;
   font-size: 15px;
-  color: deeppink;
+  color: #000;
+display: inline-block;
+margin: 10px;
+padding: 5px 0px 5px 5px;
 }
 i{
-  position: absolute;
-    right: 0;
-    background-color: gray;
-    font-size: 28px;
+    background-color: #ccc;
+    font-size: 15px;
+    padding: 10px ;
+    color: #252525;
 }
 }
 // Small devices (landscape phones, less than 768px)
