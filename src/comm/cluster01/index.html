@@ -31,7 +31,7 @@
                     </div>
                     <div class="col-6 col-xl-8 col-lg-8 ml-auto">
                         <div class="text-right">
-                            <a href="" target="_blank" class="login-btn" id="">Take Assesment</a>
+                            <a href="" target="_blank" class="login-btn" id="assessment-link">Take Assesment</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
     <section class="job-section">
         <div class="container-fulid padd-30">
             <div class="page-title text-center">
-                <h4>Complete all given sessions before EOD of 06/12/2023.</h4>
+                <h4>Complete all given sessions before EOD of <u id="today">06/12/2023</u>.</h4>
             </div>
             <div class="job-list">
                 <div class="row m-0" id="video-wrapper">
@@ -102,7 +102,10 @@
 
 
         const template = '<div class="col-12 col-lg-6 col-xl-6 col-md-6 pt-3 pb-3"> <div class="job-card h-100"> <div class="card-top"> <iframe width="420" height="345" src="https://www.youtube.com/embed/FYiwER5CVj0"> </iframe> </div> </div> </div>';
-        const videoWrapper = document.getElementById('video-wrapper');
+        
+		const videoWrapper = document.getElementById('video-wrapper');
+		const assessmentLinkElement = document.getElementById('assessment-link');
+		const deadlineElement = document.getElementById('today');
         videoWrapper.innerHTML = "";
 
         var videos = {
@@ -112,11 +115,22 @@
             "15/12/2022":['rhZetIMVHVI'],
             "16/12/2022":['JWWLOg54K-8'],
             "19/12/2022":['FYiwER5CVj0']
-        }
+        },
+			assessments = {
+			"12/12/2022": "https:/www.google.com",
+			"13/12/2022": "https:/www.youtube.com"
+		}
 
         var today = new Date(),
             dateKey = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}`;
         videos[dateKey].forEach(generateVideoCard)
+		console.log(dateKey, assessments[dateKey])
+		
+		//update Assessment Link
+		assessmentLinkElement.setAttribute('href', assessments[dateKey]);
+		
+		//update deadline
+		deadlineElement.innerText = dateKey;
 </script>
 </body>
 </html>
