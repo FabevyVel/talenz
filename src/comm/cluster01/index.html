@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -101,24 +100,24 @@
         }
 
 
-        const template =  `<div class="col-12 col-lg-6 col-xl-6 col-md-6 pt-3 pb-3"> <div class="job-card h-100"> <div class="card-top"> <iframe width="420" height="345" src="https://www.youtube.com/embed/FYiwER5CVj0"> </iframe> </div> </div> </div> `;
-        
+        const template =  `<div class="col-12 col-lg-6 col-xl-6 col-md-6 pt-3 pb-3"> <div class="job-card h-100"> <div class="card-top"> <iframe width="420" height="545" src="https://www.youtube.com/embed/FYiwER5CVj0"> </iframe> </div> </div> </div> `;
+
 		const videoWrapper = document.getElementById('video-wrapper');
 		const assessmentLinkElement = document.getElementById('assessment-link');
 		const deadlineElement = document.getElementById('today');
         videoWrapper.innerHTML = "";
 
         var videos = {
-            "14/12/2022":['FYiwER5CVj0'],
-            "15/12/2022":['c5fS2NyY0dA'],
-            "16/12/2022":['Wj6cDzJVrDY'],
-            "19/12/2022":['rhZetIMVHVI'],
-            "20/12/2022":['JWWLOg54K-8'],
-            "21/12/2022":['XJXy31v0Gdo']
+            "15/12/2022":['FYiwER5CVj0'],
+            "16/12/2022":['c5fS2NyY0dA'],
+            "17/12/2022":['Wj6cDzJVrDY'],
+            "18/12/2022":['rhZetIMVHVI'],
+            "19/12/2022":['JWWLOg54K-8'],
+            "20/12/2022":['XJXy31v0Gdo']
         },
 			assessments = {
-			"15/12/2022": "https:/www.google.com",
-			"16/12/2022": "https:/www.youtube.com"
+			"16/12/2022": "https:/www.google.com",
+			"17/12/2022": "https:/www.youtube.com"
 		}
 
         var today = new Date(),
@@ -127,7 +126,11 @@
 		console.log(dateKey, assessments[dateKey])
 		
 		//update Assessment Link
-		assessmentLinkElement.setAttribute('href', assessments[dateKey]);
+		if(assessments[dateKey] !== undefined ){
+			assessmentLinkElement.setAttribute('href', assessments[dateKey]);
+		}else{
+			assessmentLinkElement.style.display = "none";
+		}
 		
 		//update deadline
 		deadlineElement.innerText = dateKey;
