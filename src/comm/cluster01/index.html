@@ -103,6 +103,7 @@
                 iFrame;
             cardElement.innerHTML = template;
             cardElement = cardElement.firstChild;
+            cardElement.classList.add("col-12", "col-lg-6", "col-xl-6", "col-md-6","pt-3","pb-3");
             iFrame = cardElement.getElementsByTagName('iframe')[0];
             iFrame.setAttribute('src', 'https://www.youtube.com/embed/'+videoid);
             videoWrapper.append(cardElement);
@@ -115,7 +116,7 @@
 		}
 
 
-        const template =  `<div class="col-12 col-lg-6 col-xl-6 col-md-6 pt-3 pb-3"> <div class="job-card h-100"> <div class="card-top"> <iframe width="420" height="545" src="https://www.youtube.com/embed/FYiwER5CVj0"> </iframe> </div> </div> </div> `;
+        const template =  `<div> <div class="job-card h-100"> <div class="card-top"> <iframe width="420" height="545" src="https://www.youtube.com/embed/FYiwER5CVj0"> </iframe> </div> </div> </div> `;
 
 		const videoWrapper = document.getElementById('video-wrapper');
 		const assessmentLinkElement = document.getElementById('assessment-link');
@@ -126,9 +127,10 @@
             "23/12/2022":['2Q0ZaLJZ8W0', 'dyKbmYynCtE'],
             "26/12/2022":['eyIQwxNn-IU', 'XuR-8yXrny4'],
             "27/12/2022":['RJEtNeaR7KM', 'SE5CP2GHz2g'],
-            "28/12/2022":[''],
-            "29/12/2022":[''],
-            "30/12/2022":['']
+            "29/12/2022":['z34lG9kA7fU', 'pWm3v8SSx4s'],
+            "30/12/2022":['_elMxYn7IPQ'],
+            "31/12/2022":['_elMxYn7IPQ'],
+            "01/01/2023":['_elMxYn7IPQ']
         },
 			assessments = {
 			"26/12/2022": "https://forms.office.com/r/wRBqPmLHbm",
